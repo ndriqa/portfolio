@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FallingRain</title>
+    <link rel="icon" href="../../assets/images/logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../0000project/proj.css">
+    <script src="../0000project/proj.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="project">
+            <h1 class="title">
+                <a href="../../index.html">&#x219C;</a>    
+                FallingRain 
+                <ul class="tags">
+                    <li class="tag">Kotlin</li>
+                </ul>
+            </h1>
+            
+            <div class="page">
+                <p>This cool project idea is a modified version of the concept shown
+                    <a class="reference" href="#link1">in the video linked at the end of this document</a>.
+                    (not my video)
+                </p>
+                <p>I've done a detailed explanation on how it works, about 2 years ago, in my old 
+                    <a class="reference" href="#link2">blogspot post</a>.
+                </p>
+                <p>The logic behind the beautiful view created by the app is pretty simple.</p>
+                <label for="images">First, let's see what we are talking about here:</label>
+                <div id="images" class="images">
+                    <div onclick="imageClick(event)" class="img"><img src="./example.gif" alt="example pic"></div>
+                </div>
+                <p>Now, here is the basic structure I had in mind while writing this app.</p>
+                <ul class="list">
+                    <li>Write the droplet class</li>
+                    <li>Create a canvas</li>
+                    <li>Add thousands of droplets in the canvas</li>
+                    <li>Update the position of each droplet every 10 milliseconds</li>
+                </ul>
+                <p>That's it.</p>
+                <p>Once the app design is finished, writing the code is very easy.</p>
+                <p>What I did different is that I added some new fields to the droplet class
+                    like <strong>width</strong> and <strong>speed</strong> so I could give the droplets
+                    a depth perception by drawing them as rectangles and not as lines, and set the falling speed accordingly 
+                    so it appears as if the bigger droplets(those that look like they are in front) are falling faster 
+                    than those in the back.
+                </p>
+                <p>If you try this project I'd recommend trying something different, for example add 
+                    <strong>horizontal speed</strong> and make the droplets slide a bit to the side to imitate
+                    the wind pushing them.
+                </p>
+                <p>Anyway, this is an old project so keep in mind that it is not as efficient as I would make it now.
+                    One of the changes I would make is that I would use Timer class to control the fps of the animation
+                    and not the <strong><em>Thread.sleep()</em></strong> since the sleep() method of Thread class is not
+                    meant for this kind of things.
+                </p>
+                        
+                <label for="links">Here are some links if you're more interested in the project: </label>
+                <ul id="links">
+                    <li><a id="link1" href="https://www.youtube.com/watch?v=KkyIDI6rQJI" target="_blank">Youtube video(not mine)</a></li>
+                    <li><a id="link2" href="https://ndriqa.blogspot.com/2019/10/falling-rain-java-program.html" target="_blank">My blogspot post</a></li>
+
+                </ul>    
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

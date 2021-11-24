@@ -1,0 +1,77 @@
+.note_container {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.note {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 2px 2px darkslategray;
+    transition: all 0.2s ease-in;
+}
+
+.note:hover {
+    box-shadow: 4px 4px 8px darkslategray;
+}
+
+.note_title {
+    background-color: #8080800F;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.note_body {
+    padding: 20px;
+    text-align: center;
+    text-overflow: clip;
+}
+
+.reddy {
+    background-color: lightsalmon;
+    
+}
+
+.greeny {
+    background-color: lightgreen;
+}
+
+.bluey {
+    background-color: lightskyblue;
+}
+
+.yellowy {
+    background-color: lightyellow;
+}
+
+#shuffle {
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    color: darkslategray;
+    background-color: rgba(71, 61, 139, 0.3);
+    width: fit-content;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+        supported by Chrome, Edge, Opera and Firefox */
+}

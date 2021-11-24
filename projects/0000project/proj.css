@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Quicksand;
+}
+
+body {
+    background-color: darkslategray;
+    color: darkslategray;
+}
+
+.project {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 15px;
+    background-color: lightyellow;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+}
+
+.title {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+.tags {
+    display: inline-block;
+    list-style: none;
+}
+
+.tag {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: lightgreen;
+    padding: 5px;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.project p {
+    font-size: 1.25rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: gainsboro;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: slategray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darkslategray;
+}
+
+.page p+p {
+    margin-top: 20px;
+}
+
+/* For mobiles: */
+@media only screen and (max-width: 768px) {
+    .page {
+        padding: 20px;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 769px) {
+    .page {
+        padding: 50px;
+    }
+}
+
+.images {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    background-color: #2f4f4f80;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.images .img {
+    flex: 1;
+    transition: flex 0.3s ease-in;
+}
+
+.images .img:hover {
+    cursor: pointer;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 15px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+
+}
+
+.big_image {
+    flex: 3 !important;
+}
+
+#links {
+    list-style: none;
+}
+
+#links a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: darkslateblue;
+    border: 1px dashed darkslateblue;
+    border-radius: 10px;
+    padding: 0px 15px;
+    box-shadow: 2px 2px 2px darkslateblue;
+}
+
+#links a:hover {
+    box-shadow: 2px 2px 4px darkslateblue;
+}
+
+.page .list {
+    list-style: none;
+    list-style-type: "→";
+    list-style-position: inside;
+    font-weight: bolder;
+}
+
+.page .list li {
+    width: fit-content;
+}
+
+.reference {
+    text-decoration: none;
+    font-style: italic;
+    color: darkslategray;
+    text-shadow: 1px 1px 0px #6a5acd80;
+}
+
+.reference::after {
+    content: "↓";
+}
+
+.warning {
+    background-color: lightsalmon;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 2px darkred;
+}

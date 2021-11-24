@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ndriqa</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style_about.css">
+    <link rel="stylesheet" href="./styles/style_projects.css">
+    <link rel="stylesheet" href="./styles/style_notes.css">
+    <link rel="stylesheet" href="./styles/style_contact.css">
+    <link rel="icon" href="./assets/images/logo.png">
+    <script src="./app/ClassWatcher.js"></script>
+</head>
+
+<body>
+    <div class="folder">
+        <div id="home" class="paper active" onclick="paperSelect(0)">
+            <div class="title_holder horizontal_title">
+                <p class="page_title">home</p>
+            </div>
+            <div class="page page_visible">
+                <div id="introduction">
+                    <div class="image">
+                        <img src="./assets/images/vectorProfile.png" alt="my vector profile pic">
+                    </div>
+                    <div class="text">
+                        <p>Hi there!</p>
+                        <br>
+                        <p>I'm <strong>Ndriçim Rrahmani</strong>, but you can call me <strong>Ndriqa</strong></p>
+                        <br>
+                        <p>This is my personal website. </p>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>I want to share here all the <strong>projects I take part in</strong>, you can find those in the
+                        <strong>projects</strong> paper on the right
+                    </p>
+                    <br>
+                    <p>If you want to <strong>know more about me</strong>, you cant look up in the <strong>about
+                            me</strong> paper</p>
+                    <br>
+                    <p>I may or may not occasionally <strong>write notes</strong> for something I might have done or
+                        might do, check out the <strong>notes</strong> paper</p>
+                    <br>
+                    <p>Info about <strong>how you can contact me</strong> can be found on the <strong>contact</strong>
+                        paper</p>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="paper" onclick="paperSelect(1)">
+            <div class="title_holder">
+                <p class="page_title">projects</p>
+            </div>
+            <div class="page">
+                <div class="container">
+                    <div class="project">
+                        <h2 class="project_title">Godot Tileset Generator
+                            <ul class="project_tags">
+                                <li class="tag">Godot</li>
+                                <li class="tag">Java</li>
+                                <li class="tag">Tileset</li>
+                            </ul>
+                        </h2>
+                        <h3 class="project_description">
+                            Generate Godot Tileset using only 3-tile tileset
+                        </h3>
+                        <a href="./projects/0007/GodotTilesetGenerator.html">Click here to see more</a>
+                    </div>
+                    <div class="project">
+                        <h2 class="project_title">Word Game: Asociacionet
+                            <ul class="project_tags">
+                                <li class="tag">HTML</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">JavaScript</li>
+                            </ul>
+                        </h2>
+                        <h3 class="project_description">
+                            Popular word game, mostly known from Kosovo's TV show Oxygen Show
+                        </h3>
+                        <a href="./projects/0006/Asociacionet.html">Click here to see more</a>
+                    </div>
+                    <div class="project">
+                        <h2 class="project_title">School Tools
+                            <ul class="project_tags">
+                                <li class="tag">HTML</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">JavaScript</li>
+                            </ul>
+                        </h2>
+                        <h3 class="project_description">
+                            Some school tools to help students and teachers visialize their lessons </h3>
+                        <a href="./projects/0005/schooltools.html">Click here to see more</a>
+                    </div>
+                    <div class="project">
+                        <h2 class="project_title">fallingRain
+                            <ul class="project_tags">
+                                <li class="tag">Kotlin</li>
+                            </ul>
+                        </h2>
+                        <h3 class="project_description">
+                            A cool animation using Kotlin to simulate falling rain </h3>
+                        <a href="./projects/0004FallingRain/fallingRain.html">Click here to see more</a>
+                    </div>
+                    <div class="project">
+                        <h2 class="project_title">AgeApp
+                            <ul class="project_tags">
+                                <li class="tag">HTML</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">JavaScript</li>
+                            </ul>
+                        </h2>
+                        <h3 class="project_description">
+                            You can check out some interesting stats about your age.
+                        </h3>
+                        <a href="./projects/0003AgeApp/AgeApp.html">Click here to see more</a>
+                    </div>
+                    <div class="project">
+                        <h2 class="project_title">ViziSquareFX
+                            <ul class="project_tags">
+                                <li class="tag">JavaFX</li>
+                                <li class="tag">XML</li>
+                            </ul>
+                        </h2>
+                        <h3 class="project_description">
+                            Java/JavaFX app for kids to play around with multiplication table with nice visuals
+                        </h3>
+                        <a href="./projects/0002ViziSquareFX/ViziSquareFX.html">Click here to see more</a>
+                    </div>
+                    <div class="project">
+                        <h2 class="project_title">rgbColors
+                            <ul class="project_tags">
+                                <li class="tag">Android</li>
+                                <li class="tag">Kotlin</li>
+                            </ul>
+                        </h2>
+                        <h3 class="project_description">
+                            This is an android app made with Kotlin to showcase the use of sliders
+                        </h3>
+                        <a href="./projects/0001rgbcolors/rgbColors.html">Click here to see more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="paper" onclick="paperSelect(2)">
+            <div class="title_holder">
+                <p class="page_title">about me</p>
+            </div>
+            <div class="page">
+                <div id="faqs">
+                    <div class="faq opened" onclick="openAnswer(event)">
+                        <p class="question">basic info...</p>
+                        <ul class="answer">
+                            <li>born on 5 november 1998.</li>
+                            <li>raised with a passion for problem solving.</li>
+                            <li>lived in gjilan for the majority of my life</li>
+                            <li>went to "xhavit ahmeti" high school</li>
+                            <li>studied computer sciences at university of prishtina</li>
+                        </ul>
+                    </div>
+                    <div class="faq" onclick="openAnswer(event)">
+                        <p class="question">what are some of my programming skills?</p>
+                        <ul class="answer">
+                            <li>kotlin, java, android</li>
+                            <li>css, html, javascript.</li>
+                            <li>sql, php</li>
+                            <li>godot, gdscript</li>
+                        </ul>
+                    </div>
+                    <div class="faq" onclick="openAnswer(event)">
+                        <p class="question">what do i like to do outside of programming?</p>
+                        <ul class="answer">
+                            <li>i like to play valorant.</li>
+                            <li>sometimes i craft things with small electronics.</li>
+                            <li>i like drawing and creative stuff building.</li>
+                            <li>also watch anime and read manga</li>
+                        </ul>
+                    </div>
+                    <div class="faq" onclick="openAnswer(event)">
+                        <p class="question">what are my strong points?</p>
+                        <ul class="answer">
+                            <li>critical thinking.</li>
+                            <li>team player.</li>
+                            <li>self dependent when needed.</li>
+                            <li>always give credit where credit is due</li>
+                        </ul>
+                    </div>
+                    <div class="faq" onclick="openAnswer(event)">
+                        <p class="question">what are my pet peeves?</p>
+                        <ul class="answer">
+                            <li>people not giving credit credit.</li>
+                            <li>excuses and not taking responsibility</li>
+                            <li>loud sounds.</li>
+                        </ul>
+                    </div>
+                    <div class="faq" onclick="openAnswer(event)">
+                        <p class="question">what are my ambitions?</p>
+                        <ul class="answer">
+                            <li>leaving this world better than how i found it.</li>
+                            <li>being the first to solve a world class problem</li>
+                            <li>being at my best at all times</li>
+                        </ul>
+                    </div>
+                    <div class="faq" onclick="openAnswer(event)">
+                        <p class="question">what am i thankful for?</p>
+                        <ul class="answer">
+                            <li>my whole family</li>
+                            <li>my friends</li>
+                            <li>my proffersors</li>
+                            <li>stackoverflow</li>
+                            <li>google</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script src="./app/about.js"></script>
+        </div>
+        <div id="notes" class="paper" onclick="paperSelect(3)">
+            <div class="title_holder">
+                <p class="page_title">notes</p>
+            </div>
+            <div class="page">
+                <div class="note_container">
+                    <div id="shuffle" class="noselect" onclick="shuffleNotes()">
+                        <p>shuffle notes &lt; &gt;</p>
+                    </div>
+                    <div class="note reddy noselect">
+                        <div class="note_title">
+                            Reddy
+                        </div>
+                        <div class="note_body">
+                            This website is made entirely on pure HTML/CSS/JS using no frameworks. It goes to show how
+                            much possibility is there to express your creativity
+                        </div>
+                    </div>
+                    <div class="note greeny noselect">
+                        <div class="note_title">
+                            Greeny
+                        </div>
+                        <div class="note_body">
+                            The titles of these notes were the same colors their backgrounds are cuz I'm too lazy to
+                            think other ones. Creative, right?
+                        </div>
+                    </div>
+                    <div class="note bluey noselect">
+                        <div class="note_title">
+                            Bluey
+                        </div>
+                        <div class="note_body">
+                            Do you like this page? you can go into the "contact me" paper to tell me if you like it, I
+                            would be glad to hear your thoughts!
+                        </div>
+                    </div>
+                    <div class="note yellowy noselect">
+                        <div class="note_title">
+                            Yellowy
+                        </div>
+                        <div class="note_body">
+                            I will probably write something important here, in the future, but I'll leave it like this
+                            for a now. Don't forget to check out my other projects!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./app/notes.js"></script>
+        </div>
+        <div id="contact" class="paper" onclick="paperSelect(4)">
+            <div class="title_holder">
+                <p class="page_title">contact</p>
+            </div>
+            <div class="page">
+                <div class="card_holder">
+                    <div class="card">
+                        <div class="card_head">
+                            <div class="card_img">
+                                <img src="./assets/icons/email.png" alt="card icon">
+                            </div>
+                            <h3 class="card_title">email</h3>
+                        </div>
+                        <div class="card_body">
+                            <p>If you want to directly contact me about anything, you can email me <a target="_blank"
+                                    href="mailto::ndricimrrahmani@gmail.com">here</a>. I'll get back to you as soon as I
+                                can!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_head">
+                            <div class="card_img">
+                                <img src="./assets/icons/git.png" alt="git icon">
+                            </div>
+                            <h3 class="card_title">github</h3>
+                        </div>
+                        <div class="card_body">
+                            <p>I try to share as many personal projects as I can on github, so, if you want you can
+                                click <a target="_blank" href="https://www.github.com/ndriqa">here</a> to visit my
+                                github page</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_head">
+                            <div class="card_img">
+                                <img src="./assets/icons/yt.png" alt="youtube icon">
+                            </div>
+                            <h3 class="card_title">youtube</h3>
+                        </div>
+                        <div class="card_body">
+                            <p>I might occasionally make videos about a piece of software, art or something else
+                                entirely. <a target="_blank" href="https://www.youtube.com/ndriqa">Here</a> is my
+                                youtube channel</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_head">
+                            <div class="card_img">
+                                <img src="./assets/icons/tw.png" alt="twitter icon">
+                            </div>
+                            <h3 class="card_title">twitter</h3>
+                        </div>
+                        <div class="card_body">
+                            <p><a target="_blank" href="https://www.twitter.com/ndriqimrrahmani">Here</a> is my twitter
+                                account. I tweet sometimes, retweet most of the time, and also you can message me there,
+                                if the email thing seems too formal for you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app/app.js"></script>
+</body>
+
+</html>

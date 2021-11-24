@@ -1,0 +1,65 @@
+#about .page_visible {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#faqs {
+    width: 80%;
+    height: 75%;
+    padding: 50px;
+    overflow-y: auto;
+}
+
+.faq * {
+    font-family: 'Patrick Hand', cursive;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.faq {
+    cursor: pointer;
+    user-select: none;
+    border-radius: 15px;
+    transition: all 0.2s ease-in;
+}
+
+.faq:hover{
+    background-color: #ffffff60;
+}
+
+.faq + .faq{
+    margin-top: 20px;
+}
+
+
+.question {
+    background-color: #ffffff50;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.answer {
+    display: none;
+    padding: 20px;
+    background-color: #00000030;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all 0.3s ease-in;
+}
+
+.opened .question {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.opened .answer{
+    display: block !important;
+}
+
+.faq ul {
+    list-style: square;
+    list-style-position: inside;
+
+}

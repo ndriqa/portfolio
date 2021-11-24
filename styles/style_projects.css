@@ -1,0 +1,116 @@
+#projects .page {
+    padding: 10%;
+}
+
+#projects .container {
+    overflow-y: scroll;
+    width: 100%;
+    height: 75vh;
+    scrollbar-gutter: stable;
+    padding: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: gainsboro;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: slategray;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darkslategray;
+}
+
+.project {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px dashed darkslategray;
+    box-shadow: 2px 2px 2px darkslategray;
+}
+
+
+.project + .project {
+    margin-top: 30px;
+}
+
+.project_title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed darkslategray;
+    padding-bottom: 5px;
+    color: darkslategray;
+}
+
+.project_tags {
+    list-style: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.project_title + * {
+    margin-top: 10px;
+}
+
+.project_tags li {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    color: darkslategray;
+    background-color: lightgreen;
+}
+
+.project_description {
+    font-weight: normal;
+}
+
+.project:hover {
+    cursor: default;
+    border: 2px solid darkslategray;
+    box-shadow: 2px 2px 4px darkslategray;
+}
+
+.project:hover .project_title {
+    border-bottom: 2px solid darkslategray;
+}
+
+.project:hover a{
+    opacity: 1;
+}
+
+.project a {
+    text-decoration: none;
+    display: block;
+    padding: 0px 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    color: lightyellow;
+    background-color: lightslategray;
+    opacity: 0.5;
+}
+
+/* For mobiles: */
+@media only screen and (max-width: 768px) {
+    .project_tags {
+        display: none;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 769px) {
+    
+}

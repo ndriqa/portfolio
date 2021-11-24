@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+:root {
+    --my-dark: #212121;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--my-dark);
+}
+
+.folder {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.paper {
+    position: relative;
+    border: 1px solid black;
+    border-left: none;
+    flex: 1;
+    transition: flex 0.5s cubic-bezier(0.5, 0, 0, 1);
+    box-sizing: border-box;
+}
+
+.active {
+    flex: 15;
+}
+
+.page {
+    display: none;
+    position: relative;
+    height: 100%;
+}
+
+.clickable {
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.clickable:hover {
+    box-shadow: 10px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+#home {
+    background-color: palegreen;
+    z-index: 5;
+}
+
+#projects {
+    background-color: lightyellow;
+    z-index: 4;
+}
+
+#about {
+    background-color: lightpink;
+    z-index: 3;
+}
+
+#notes {
+    background-color: thistle;
+    z-index: 2;
+}
+
+#contact {
+    background-color: lightblue;
+    z-index: 1;
+}
+
+.title_holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    user-select: none;
+    transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.page_title {
+    font-size: 1.5em;
+    word-wrap: break-all;
+    color: darkslategrey;
+    text-orientation: upright;
+    border: 2px dashed darkslategrey;
+    border-radius: 10px;
+    padding: 5px 5px;
+    font-weight: bold;
+}
+
+.active .title_holder {
+    animation-name: title_animation_start;
+    animation-duration: 0.25s;
+}
+
+.active .title_holder .page_title {
+    border: 2px solid darkslategrey;
+}
+
+@keyframes title_animation_start {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.horizontal_title {
+    writing-mode: horizontal-tb;
+    animation-name: title_animation_end;
+}
+
+@keyframes title_animation_end {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* For mobiles: */
+@media only screen and (max-width: 768px) {
+    .page_title {
+        font-size: 1.25rem;
+    }
+    .title_holder {
+        writing-mode: horizontal-tb;
+    }
+    .folder {
+        flex-direction: column;
+    }
+    .paper {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: -20px;
+        box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        padding-top: 30px;
+    }
+    .text {
+        font-size: 1.25rem;
+    }
+    #introduction {
+        flex-direction: column;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 769px) {
+    .page_title {
+        font-size: 1.5rem;
+    }
+    .folder {
+        flex-direction: row;
+    }
+    .paper {
+        border-left: none;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-left: -20px;
+        box-shadow: 5px 0px 2px rgba(0, 0, 0, 0.5);
+        padding: 30px;
+        padding-left: 50px;
+    }
+    .text {
+        font-size: 1.5rem;
+    }
+}
+
+.page_visible {
+    display: block;
+    animation-name: page_visible_animation;
+    animation-duration: 0.5s;
+}
+
+@keyframes page_visible_animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#introduction {
+    display: flex;
+}
+
+.image {
+    max-width: 300px;
+    flex: 1;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#links {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.link img {
+    width: 64px;
+    height: 64px;
+    transition: all 0.25s cubic-bezier(0.5, 0, 0, 1);
+}
+.link img:hover {
+    box-shadow: 2px 2px 4px var(--my-dark);
+}
