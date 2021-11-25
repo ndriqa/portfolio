@@ -75,3 +75,21 @@
     /* Non-prefixed version, currently
         supported by Chrome, Edge, Opera and Firefox */
 }
+
+@media only screen and (max-width: 768px) {
+    .note_container {
+        height: 450px;
+    }
+    .note {
+        width: 150px;
+        height: 150px;
+        font-size: 0.7rem;
+    }
+    .note_title {
+        padding: 5px 0px;
+    }
+    .note_body {
+        text-overflow: clip;
+        padding: 5px;
+    }
+}
