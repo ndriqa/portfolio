@@ -166,6 +166,9 @@ body {
     #introduction {
         flex-direction: column;
     }
+    .image {
+        align-self: center;
+    }
 }
 
 /*Desktop*/
